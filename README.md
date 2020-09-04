@@ -1,50 +1,47 @@
+
 # Password-Generator-Hw-3
 
 # 03 JavaScript: Password Generator
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+This **project** was assembled to randomly generate a password that meets certain criteria so that the user can create a strong password that provides greater security.
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+## Preview
 
-## User Story
+![Password Generator](./Preview-Pwd-Gen.png)
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+> Password Generator Page Example
 
-## Acceptance Criteria
+---
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+### Website
 
-The following image demonstrates the application functionality:
+[Password Generator]
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+https://sirog-e.github.io/Password-Generator-Hw-3/
+
+---
+
+## Description
+
+The goal was to:
+- Get presented with a series of prompts for password criteria when user clicks the button to generate a password.
+- To select which criteria to include in the password when prompted for password criteria.
+- To choose a length of at least 8 characters, and no more than 128 characters when prompted for the length of the password. 
+- To choose lowercase, uppercase, numeric, and/or special characters when prompted for character types to include in the password.
+- User input should be validated and at least one character type should be selected when user answers each prompt.
+- A password is generated that matches the selected criteria once all prompts are answered.
+- The user's new password is written to the page, inside the password Generator Box once the password is generated.
+
+
 
 ## Review
 
-You are required to submit the following for review:
+After completing my javascript for password generator, I was able to build a function that generates multiple passwords as long as user meets the criteria mentioned in the description. Length must be between 8 and 128 characters, must include at least one lowercase letter or uppercase letter, or number or a special character. User may select one or more, or all. 
 
-* The URL of the deployed application.
+To complete this project I got help from several sites listed below:
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+* https://stackoverflow.com/questions/1497481/javascript-password-generator
+* https://jsfiddle.net/
+* https://www.w3schools.com/js/js_loop_for.asp
+* https://jsfiddle.net/b2av54t0/4/
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
