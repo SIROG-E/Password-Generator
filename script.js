@@ -1,7 +1,14 @@
- console.log("Password Generator");
+//console.log("Password Generator");
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+//https://stackoverflow.com/questions/1497481/javascript-password-generator
+//https://jsfiddle.net/
+//Math.random().toString(36).slice(2)
+//https://www.w3schools.com/js/js_loop_for.asp
+
 
 //Reference: https://jsfiddle.net/b2av54t0/4/
 function generatePassword(length, lowerCase, upperCase, numeric, specialChar) {
@@ -70,12 +77,56 @@ function generatePassword(length, lowerCase, upperCase, numeric, specialChar) {
 
     generatedPwd = generatedPwd + randomChar;
   }
+
+  
+
+
+
   return generatedPwd;
 }
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+
+  //1. prompt() to enter length of password
+  var length = prompt("Enter a length between 8 and 128 characters");
+  length = parseInt(length);
+  console.log("length: ", length);
+
+  //1.1 check length is between 8 and 128
+  if (length >= 8 && length <= 128) {    
+    //  block of code to be executed if the condition is true
+    console.log(":) good length: ", length);
+  } else {
+    //  block of code to be executed if the condition is false
+    console.log(":( bad length: ", length);
+    alert("You must choose a number between 8 and 128. Please try again!"); 
+    return; 
+
+  }
+
+  //2. confirm() lowercase
+  var includeLowerCase = confirm("Include lower case?");
+  console.log("lowerCase: ", includeLowerCase);
+
+  //3. confirm() uppercase
+  var includeUpperCase = confirm("Include upper case?");
+
+  //4. confirm() numeric
+  var includeNumeric = confirm("Include numbers?");
+
+  //5. confirm() special characters
+  var includeSpecialChar = confirm("Include special characters?");
+
+  //6. validate selection
+  //if lowercase is false and uppercase is false and numeric is false and special character is false
+  //then alert user.
+  if (includeLowerCase === false && includeUpperCase === false && includeNumeric === false && includeSpecialChar === false) {
+    alert("You must select at least one type of character");
+    return;
+  }  
+
+  var password = generatePassword(length, includeLowerCase, includeUpperCase, includeNumeric, includeSpecialChar);
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -84,6 +135,5 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
 
 
