@@ -1,6 +1,5 @@
  //console.log("Password Generator");
 
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -8,7 +7,6 @@ var generateBtn = document.querySelector("#generate");
 //https://jsfiddle.net/
 //Math.random().toString(36).slice(2)
 //https://www.w3schools.com/js/js_loop_for.asp
-
 
 //Reference: https://jsfiddle.net/b2av54t0/4/
 function generatePassword(length, lowerCase, upperCase, numeric, specialChar) {
@@ -77,11 +75,6 @@ function generatePassword(length, lowerCase, upperCase, numeric, specialChar) {
 
     generatedPwd = generatedPwd + randomChar;
   }
-
-  
-
- 
-
   return generatedPwd;
 }
 
@@ -102,7 +95,6 @@ function writePassword() {
     console.log(":( bad length: ", length);
     alert("You must choose a number between 8 and 128. Please try again!"); 
     return; 
-
   }
 
   //2. confirm() lowercase
@@ -130,7 +122,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
