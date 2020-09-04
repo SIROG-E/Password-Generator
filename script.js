@@ -1,4 +1,4 @@
-//console.log("Password Generator");
+ //console.log("Password Generator");
 
 
 // Assignment Code
@@ -80,7 +80,7 @@ function generatePassword(length, lowerCase, upperCase, numeric, specialChar) {
 
   
 
-
+ 
 
   return generatedPwd;
 }
@@ -106,11 +106,11 @@ function writePassword() {
   }
 
   //2. confirm() lowercase
-  var includeLowerCase = confirm("Include lower case?");
+  var includeLowerCase = confirm("Include lower case letters?");
   console.log("lowerCase: ", includeLowerCase);
 
   //3. confirm() uppercase
-  var includeUpperCase = confirm("Include upper case?");
+  var includeUpperCase = confirm("Include upper case letters?");
 
   //4. confirm() numeric
   var includeNumeric = confirm("Include numbers?");
