@@ -1,7 +1,7 @@
 
 # Password-Generator-Hw-3
 
-# 03 JavaScript: Password Generator
+# JavaScript: Password Generator
 
 This **project** was assembled to randomly generate a password that meets certain criteria so that the user can create a strong password that provides greater security.
 
@@ -17,7 +17,7 @@ This **project** was assembled to randomly generate a password that meets certai
 
 [Password Generator]
 
-https://sirog-e.github.io/Password-Generator-Hw-3/
+https://sirog-e.github.io/Password-Generator/
 
 ---
 
